@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.airgaz.scanner.Tab1"
+    android:id="@+id/linear">
+
+    <android.support.v7.widget.CardView android:id="@+id/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="#0e2f63"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout android:orientation="horizontal"
+            android:id="@+id/bott"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0e2f63"
+            android:layout_gravity="center">
+
+            <ImageButton android:id="@+id/bold"
+                android:contentDescription="@null"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_format_bold_black_24dp"
+                android:scaleType="center"
+                android:background="?android:selectableItemBackground">
+            </ImageButton>
+
+            <ImageButton android:id="@+id/italic"
+                android:contentDescription="@null"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_format_italic_black_24dp"
+                android:scaleType="center"
+                android:background="?android:selectableItemBackground">
+            </ImageButton>
+
+            <ImageButton android:id="@+id/underline"
+                android:contentDescription="@null"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_format_underlined_black_24dp"
+                android:scaleType="center"
+                android:background="?android:selectableItemBackground">
+            </ImageButton>
+
+            <ImageButton android:id="@+id/fontsize"
+                android:contentDescription="@null"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_text_fields_black_24dp"
+                android:scaleType="center"
+                android:background="?android:selectableItemBackground">
+            </ImageButton>
+
+            <ImageButton android:id="@+id/link"
+                android:contentDescription="@null"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_insert_link_black_24dp"
+                android:scaleType="center"
+                android:background="?android:selectableItemBackground">
+            </ImageButton>
+
+            <ImageButton android:id="@+id/clear"
+                android:contentDescription="@null"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_clear_black_24dp"
+                android:scaleType="center"
+                android:background="?android:selectableItemBackground">
+            </ImageButton>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <io.github.mthli.knife.KnifeText
+            android:id="@+id/knife"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/tools"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:paddingRight="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="top|start"
+            android:scrollbars="vertical"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            app:bulletColor="@color/blue_500"
+            app:bulletRadius="@dimen/bullet_radius"
+            app:bulletGapWidth="@dimen/bullet_gap_width"
+            app:historyEnable="true"
+            app:historySize="99"
+            app:linkColor="@color/blue_500"
+            app:linkUnderline="true"
+            app:quoteColor="@color/blue_500"
+            app:quoteStripeWidth="@dimen/quote_stripe_width"
+            app:quoteCapWidth="@dimen/quote_gap_width">
+
+        </io.github.mthli.knife.KnifeText>
+
+    <ImageButton
+        android:id="@+id/save"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/tools"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_save_blue_24dp">
+    </ImageButton>
+
+
+</RelativeLayout>
